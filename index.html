@@ -9,8 +9,9 @@
 	<head>
 		<title>About Me</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Latest compiled and minified CSS -->
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -59,56 +60,68 @@
 											<li><a href="http://www.gnu.org/software/bash/" class="icon solid fa-terminal" target="_blank"><span class="label">Terminal</span></a></li>
 											<li><a class="icon brands fa-aws" href="https://aws.amazon.com/" target="_blank"><span class="label">AWS</span></a></li>
 										</ul>
-										<header>
-											<h2>Interests and Abilities</h2>
-										</header>
-										<font>
-											Managing VBox virtual machines and PuTTY'ng into them to send commands to my ubuntu servers is always fun. <br/>
-											But I prefer to automate repetitive tasks so I write .sh and .py files.<br />
-											Whenever I come across a time consuming task I will automate it, as even if it is slower to write a script to do it I am satisfied with my work. <br/>
-											I also enjoy helping anyone with IT tasks such as software/hardware issues or connecting to a local network or even virtual network with VM's.<br/>
-											<br/>
-										</font>	
+										<section>
+											<header>
+												<h2>Interests and Abilities</h2>
+											</header>
+											<font>
+												Managing VBox virtual machines and PuTTY'ng into them to send commands to my ubuntu servers is always fun. <br/>
+												But I prefer to automate repetitive tasks so I write .sh and .py files.<br />
+												Whenever I come across a time consuming task I will automate it, as even if it is slower to write a script to do it I am satisfied with my work. <br/>
+												I also enjoy helping anyone with IT tasks such as software/hardware issues or connecting to a local network or even virtual network with VM's.<br/>
+												<br/>
+											</font>	
+										</section>
+
+
 
 										<style>
-
-										 #gallery-text-left{
-										  /* Added */
-										  width: 50%;
-										  float: left;
-										  text-align: center;
-										  min-width: 450px;
+										.containar:after { /*clear float*/
+										  content: "";
+										  display: table;
+										  clear: both;
 										}
 
-										#gallery-text-right{
-										  /* Added */
+										.saction {
+										  float: left;
 										  width: 50%;
-										  text-align: center;
-										  min-width: 450px;
-										  float: right;
+
+										  box-sizing: border-box;
+										}
+
+										@media (max-width: 758px) { /*breakpoint*/
+										  .saction {
+										    float: none;
+										    width: auto;
+										    padding-bottom: 20px;
+										  }
 										}
 
 									    </style>
-									    <br/>
-										<div id="gallery-text-right">
-											<h2>IT Skills</h2>
-												<h3>Windows/Unix OS Troubleshooting</h3>
-												<h3>FTP/PuTTY/Port Management</h3>
-												<h3>Network Configurations</h3>
-												<h3>Managing Permissions</h3>
-												<h3>Security Perspective</h3>
-												<h3>Customer Service</h3>
-										</div>
-										<div id="gallery-text-left">
-											<h2>Programming Skills</h2>
-												<h3>Basic Web Developement</h3>
-												<h3>Bash/Powershell</h3>
-												<h3>AWS CLI/JSON</h3>
-												<h3>REST API</h3>
-												<h3>Python</h3>
-												<h3>SQL</h3>
-										</div>
 
+
+
+									    <br/>
+									    <div class="containar">	
+											<div class="saction">
+												<h2>IT Skills</h2>
+													<h3>Windows/Unix OS Troubleshooting</h3>
+													<h3>FTP/PuTTY/Port Management</h3>
+													<h3>Network Configurations</h3>
+													<h3>Managing Permissions</h3>
+													<h3>Security Perspective</h3>
+													<h3>Customer Service</h3>
+											</div>
+											<div class="saction">
+												<h2>Programming Skills</h2>
+													<h3>Python</h3>
+													<h3>Bash/Powershell</h3>
+													<h3>AWS CLI/JSON</h3>
+													<h3>REST API</h3>
+													<h3>Basic Web Developement</h3>
+													<h3>SQL</h3>
+											</div>
+										</div>
 										<!--
 										<style>
 										* {box-sizing: border-box}
