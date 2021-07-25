@@ -63,53 +63,104 @@
         display: inline;
         float: left;
     }
-    @media (max-width: 1000px) { /*breakpoint*/
-    .columns-2 {
-        float: none;
-        width: auto;
-        padding-bottom: 20px;
+
+    .containar:after { /*clear float*/
+        content: "";
+        display: table;
+        clear: both;
     }
 
+    .saction {
+        float: left;
+        width: 50%;
 
+        box-sizing: border-box;
+    }
+    .right-saction{
+        float: left;
+        width: 50%;
+        text-align: right;
+        box-sizing: border-box;
+    }
+    .soction {
+        float: left;
+        width: 34%;
+
+        box-sizing: border-box;
+    }
+                                        
+
+    @media (max-width: 900px) { /*breakpoint*/
+    .saction {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .right-saction {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .soction {
+        float: none;
+        width: auto;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .inline-left {
+        float: left;
+    }
+    .inline-right {
+        display: flex;
+        justify-content: space-between;float: right;
+    }
 </style>
-
+<div style="padding-top: 53px;"></div>
 <div class="paged">
 
     <div class="div69">
-       <div class="columns-2">
+       <div class="containar">
 
+            <div class="saction">
             <a 
              id="x1-2r1"></a>
             <h3 class="sectionHead"><a 
              id="x1-10001"></a><span 
-            class="ecrm-2488">Antwan Meave</span></h3>
+            class="ecrm-2488"><font size="+4">Antwan Meave</font></span></h3>
           <p  ><a 
             href="https://antwanmeave.com" ><span 
             class="ecrm-1440">https://antwanmeave.com</span></a>
+            </div>
 
-            <div style="text-align: right;">
-            <a 
-            href="mailto:antwanlaroy@gmail.com" ><span 
-            class="ecrm-0900">antwanlaroy@gmail.com</span></a>
-            <br>
-            <a 
-            href="tel:14808492477" ><span 
-            class="ecrm-0900">480-849-2477</span></a>
-            <br>
-            <a 
-            href="https://www.linkedin.com/in/antwanmeave/" ><span 
-            class="ecrm-0900">linkedin.com/in/antwanmeave/</span></a>
-            <br>
-            <a 
-            href="https://github.com/Ammmmmmmmmmmmmmmm" ><span 
-            class="ecrm-0900">github.com/Ammmmmmmmmmmmmmmm</span></a>
+            <div class="right-saction">
+                <a 
+                href="mailto:antwanlaroy@gmail.com" ><span 
+                class="ecrm-0900">antwanlaroy@gmail.com</span></a>
+                <br>
+                <a 
+                href="tel:14808492477" ><span 
+                class="ecrm-0900">480-849-2477</span></a>
+                <br>
+                <a 
+                href="https://www.linkedin.com/in/antwanmeave/" ><span 
+                class="ecrm-0900">linkedin.com/in/antwanmeave/</span></a>
+                <br>
+                <a 
+                href="https://github.com/Ammmmmmmmmmmmmmmm" ><span 
+                class="ecrm-0900">github.com/Ammmmmmmmmmmmmmmm</span></a>
+               
             </div>
         </div>
     </div>
-<div style="padding-top: 20px;"></div>
+<div style="padding-top: 23px;"></div>
 
 <h3 class="sectionHead"> <a 
- id="x1-20002"></a>Summary</h3>
+ id="x1-20002"></a><font size="+3">Summary</font></h3>
+
+<div style="padding-top: 4px;"></div>
+
 <!--l. 77--><p class="noindent" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Building computers, learning programming languages, and developing digital products isn&#8217;t just a hobby it&#8217;s a
 passion. I make virtual machines and EC2 instances and manage LAN networks, virtual networks, and
 Virtual Private Cloud networks in AWS. I&#8217;m a problem solver at heart who has been able to overcome
@@ -120,113 +171,110 @@ servers.
 Computer Science Engineering degree in 2022. I have my Google certificate in Python and am in process of
 completing an Amazon Web Services Solutions Architect certificate.
 
-<div style="padding-top: 20px;"></div>
+<div style="padding-top: 23px;"></div>
+
+
+<h3 class="sectionHead"> </a><font size="+3">Skills</font></h3>
+   
+
+<div style="padding-top: 23px;"></div>
+
+<div class="containar">
+    <div class="soction">
+    <h4 class="subsectionHead">Programming Skills :</h4>
+
+
+
+           <ul class="itemize1">
+          <li class="itemize">Python
+                                                                                             
+                                                                                             
+          </li>
+          <li class="itemize">Bash/Powershell
+          </li>
+          <li class="itemize">AWS CLI/JSON
+          </li>
+          <li class="itemize">REST API
+          </li>
+          <li class="itemize">Basic Web Developement
+          </li>
+          <li class="itemize">SQL</li></ul> 
+    </div>                                                 
+
+
+    
+    
+    <div class="soction">
+    <h4 class="subsectionHead">IT Skills :</h4>
+          <ul class="itemize1">
+          <li class="itemize">Windows/Unix OS Troubleshooting
+                                                                                                                                                   
+          </li>
+          <li class="itemize">FTP/PuTTY/Port Management
+          </li>
+          <li class="itemize">Network Configurations
+          </li>
+          <li class="itemize">Managing Permissions
+          </li>
+          <li class="itemize">Security Perspective
+          </li>
+          <li class="itemize">Customer Service</li></ul>
+    </div>
+                                                                                             
+
+</div>
+
 
 <a 
- id="x1-2001r2"></a>
-<h3 class="sectionHead"> <a 
- id="x1-30003"></a>Skills</h3>
-   <div class="columns-2">
-
-<div style="padding-top: 20px;"></div>
-<h4 class="subsectionHead">Programming Skills :</h4>
-
-
-
-       <ul class="itemize1">
-      <li class="itemize">Python
-                                                                                         
-                                                                                         
-      </li>
-      <li class="itemize">Bash/Powershell
-      </li>
-      <li class="itemize">AWS CLI/JSON
-      </li>
-      <li class="itemize">REST API
-      </li>
-      <li class="itemize">Basic Web Developement
-      </li>
-      <li class="itemize">SQL</li></ul>                                                                                  
-
-
-<div style="padding-top: 20px;"></div>
-
-<h4 class="subsectionHead">IT Skills :</h4>
-      <ul class="itemize1">
-      <li class="itemize">Windows/Unix OS Troubleshooting
-                                                                                                                                               
-      </li>
-      <li class="itemize">FTP/PuTTY/Port Management
-      </li>
-      <li class="itemize">Network Configurations
-      </li>
-      <li class="itemize">Managing Permissions
-      </li>
-      <li class="itemize">Security Perspective
-      </li>
-      <li class="itemize">Customer Service</li></ul>
-
-                                                                                         
-
-   </div>
-
-
-
-<a 
- id="x1-5001r3"></a>
+id="x1-5001r3"></a>
 <h3 class="sectionHead"><a 
- id="x1-60004"></a>Work Experience</h3>
- <div style="padding-top: 20px;"></div>
+id="x1-60004"></a><font size="+3">Work Experience</font></h3>
+
+<div style="padding-top: 23px;"></div>
 <a 
  id="x1-6001r5"></a>
 <h4 class="subsectionHead"><a 
- id="x1-70001"></a>Computer Technician &#8212; EFoods Imports Inc.</h4>
+ id="x1-70001"></a>Computer Technician &#8212; Part-Time 2020 to 2021 &#8212; EFoods Imports Inc.</h4>
 <a 
  id="x1-7001r1"></a>
 <h5 class="subsubsectionHead"><a 
- id="x1-80001"></a>Part-Time 2020 to 2021</h5>
+ id="x1-80001"></a></h5>
 <!--l. 115--><p class="noindent" >Managed LAN network and ports so devices can connect to router securely. <br> Remotely connected to a computer to
 troubleshoot software issues.
 
 </a>
 <h3 class="sectionHead"> 
-<div style="padding-top: 20px;"></div>
+<div style="padding-top: 23px;"></div>
  
     <a 
- id="x1-90005"></a>Volunteer Experience</h3>
-<div style="padding-top: 20px;"></div>
+ id="x1-90005"></a><font size="+3">Volunteer Experience</font></h3>
+<div style="padding-top: 23px;"></div>
 
+<div >
 <a 
  id="x1-9001r7"></a>
 <h4 class="subsectionHead"> <a 
- id="x1-100001"></a>Volunteer Staff &#8212; St. Vincent de Paul Thrift Store</h4>
+ id="x1-100001"></a>
 
+
+Volunteer Staff &#8212; 2017 &#8212; St. Vincent de Paul Thrift Store
+
+
+</h4>
+</div>
 <a 
  id="x1-10001r8"></a>
-<h5 class="subsubsectionHead"><a 
- id="x1-110001"></a>May 2017 to </h5>
+
 <!--l. 123--><p class="noindent" >Recieved and evaluated donations as well as painting and placing baseboards.
 <a 
  id="x1-11001r9"></a>
- <div style="padding-top: 20px;"></div>
+ <div style="padding-top: 23px;"></div>
 <h3 class="sectionHead"><a 
- id="x1-120006"></a>Education</h3>
- <div style="padding-top: 20px;"></div>
-<a 
- id="x1-12001r10"></a>
-<h4 class="subsectionHead"> <a 
- id="x1-130001"></a>Lonestar College</h4>
-<a 
- id="x1-13001r11"></a>
-<h5 ></a>Computer Science Engineering</h5>
+ id="x1-120006"></a><font size="+3">Education</font></h3>
+ <div style="padding-top: 23px;"></div>
 
-    <div class="my-header">
-        <h5>Computer Science Engineering</h5>
-        <span></span>
-    </div>
-<div style="clear:both"></div>
 
-<div style="padding-top: 20px;"></div>
+
 
 <a 
  id="x1-14001r13"></a>
@@ -236,16 +284,42 @@ troubleshoot software issues.
  id="x1-15001r14"></a>
 <h5 class="subsubsectionHead"> <a 
  id="x1-160001"></a>Crash Course on Python - Google</h5>
-    
+ <div style="padding-top: 23px;"></div>
+<a 
+ id="x1-12001r10"></a>
+<h4 class="subsectionHead"> <a 
+ id="x1-130001"></a>Lonestar College</h4>
+<a 
+ id="x1-13001r11"></a>
+<h5 ></a ><font> Computer Science Engineering</font></h5>
+
+
+<div style="padding-top: 23px;"></div>
+<a 
+ id="x1-12001r10"></a>
+<h4 class="subsectionHead"> <a 
+ id="x1-130001"></a>High School Diploma</h4>
+<a 
+ id="x1-13001r11"></a>
+<h5 ></a ><font>Notre Dame Preparatory Scottsdale, AZ</font></h5>
+
+
+<div style="padding-top: 23px;"></div>
+  
 </div>
-<div style="padding-top: 40px;"></div>
+<div style="padding-top: 63px;"></div>
     
                 <!-- Features -->
         
 
                 <!-- Banner-->
-                <div style="text-align: center;">   
-                <a href="resume.html" class="button scrolly">Download Resume</a>
+                <div style="text-align: center;">  
+               
+                <p><a href="Antwan-Meave-Resume.pdf" class="button scrolly" download="Antwan-Meave-Resume.pdf" target="_blank">Download Resume</a></p>
+            
+
+        
+
                 </div>
 
             <!-- Footer -->
