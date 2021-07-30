@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Martel
+- Font Author: Copyright (c) 2015 Dan Reynolds. Copyright (c) 2010-2015, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+- Font Source: http://fonts.gstatic.com/s/martel/v5/PN_xRfK9oXHga0XtYcI-jT3L_w.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
