@@ -306,6 +306,7 @@ class scene2 extends Phaser.Scene {
 	        });
 
 	        this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
+	        	if (is_alive){
 			    if (!dragDirection) {
 			        if (Math.abs(pointer.velocity.x) > Math.abs(pointer.velocity.y)) {
 			            dragDirection = 'horizontal';
@@ -319,6 +320,7 @@ class scene2 extends Phaser.Scene {
 			    } else if (dragDirection === 'vertical') {
 			        gameObject.y = dragY;
 			    }
+			}
 			});
 
 
