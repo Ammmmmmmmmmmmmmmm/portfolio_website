@@ -107,7 +107,7 @@ class scene2 extends Phaser.Scene {
 
 
 		var explosionSprite1 = this.add.sprite(p_ship.x, p_ship.y, "explosion");
-		this.p_ship.destroy();
+		
 		var explosionSprite2 = this.add.sprite(enemy.x, enemy.y, "explosion");
     	explosionSprite1.setScale(15);
     	explosionSprite1.play("explode");
@@ -304,7 +304,7 @@ class scene2 extends Phaser.Scene {
 	        });
 
 	        this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
-	        	if (is_alive){
+	        	if (this.is_alive){
 			    if (!dragDirection) {
 			        if (Math.abs(pointer.velocity.x) > Math.abs(pointer.velocity.y)) {
 			            dragDirection = 'horizontal';
