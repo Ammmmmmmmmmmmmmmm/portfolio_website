@@ -101,6 +101,7 @@ class scene2 extends Phaser.Scene {
 
 	hurtPlayer(p_ship, enemy) {
 
+		this.p_ship.setInteractive({ draggable: false });
 		this.p_ship.setAlpha(0);
 		this.p_ship.x = 3000;
 		this.p_ship.y = 3000;
