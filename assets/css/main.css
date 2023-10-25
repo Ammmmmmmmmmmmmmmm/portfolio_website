@@ -2538,7 +2538,7 @@ input, select, textarea {
 				}
 
 
-@media screen (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #banner .content h2 {
         font-size: 1.5em; /* Adjust the font size for h2 on mobile */
     }
@@ -2551,7 +2551,7 @@ input, select, textarea {
         font-size: 1.2em; /* Adjust the font size for the button on mobile */
     }
     #banner .content {
-    	background-size: auto, 50% 80%; 
+    	max-height: 55%;
 
 
 
