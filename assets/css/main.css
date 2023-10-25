@@ -7,8 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -217,7 +216,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 64em;
+		width: 73em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2483,7 +2482,9 @@ input, select, textarea {
 		background-repeat: repeat, repeat, no-repeat;
 		background-size: auto, auto, cover;
 		z-index: 1;
-		padding: 11em 0;
+		width: 100%;
+		max-height: 50vh;
+		margin: 0 auto;
 	}
 
 		#banner .content {
@@ -2694,7 +2695,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1px) {
 
 		/* Basic */
 

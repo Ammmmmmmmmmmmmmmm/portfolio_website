@@ -19,10 +19,88 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
+		<style>
+			body {
+           /*margin: 0; 
+            padding: 0; */
+        }
+
+        .iframe-container,
+		.iframe-container2 {
+			all: initial;
+	        display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    width: 100%;
+		    height: 100vh;
+    		overflow: hidden; /* Hide scroll bars */
+		    object-fit: cover;
+		    /*
+		    border-top: solid 5px #b1ddab;
+			border-bottom: solid 5px #c1cac5;
+			border-top-width: 35px;
+			border-bottom-width: 10px;
+			padding: 6em 0 6em 0;
+			*/
+
+		}
+
+		h2.major2 {
+			position: relative;
+			border-top: solid 5px #e7eae8;
+			font-size: 1.65em;
+			text-align: center;
+			margin: 0;
+			top: 0.775em;
+		}
+
+		h2.major2 span {
+			background: #fff;
+			position: relative;
+			display: inline-block;
+			top: -0.775em;
+			padding: 0 1.25em 0 1.25em;
+		}
+
+		.project-description {
+		    margin-bottom: 95px; 
+		}
+
+		strong {
+		    padding-bottom: 4%; 
+		}
+
+
+
+	    @media screen and (max-width: 1300px){
+		    .iframe-container {
+		        display: none; /* Hide the iframe on smaller screens */
+		    }
+		}
+
+		@media screen and (min-width: 1300px) {
+		    .iframe-container2 {
+		        display: none; /* Hide the iframe on smaller screens */
+		    }
+		}
+
+
+	</style>
+
+
 
 
 	</head>
+
+
+
 	<body class="homepage is-preload">
+
+
+
+
+
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -35,6 +113,7 @@
 					</div>
 				</header>
 
+
 			<!-- Nav -->
 				<nav id="nav">
 					<ul>
@@ -45,38 +124,45 @@
 				</nav>
 
 			<!-- Banner -->
+			<div>
 				<section id="banner">
 					<div class="content">
+						<div>
 						<h2>MY PORTFOLIO</h2>
-						<p>A showcase of my projects and my abilities</p>
+						<p>A showcase of my projects from GitHub</p>
 						<!-- Button 
 							<a href="#main" class="button scrolly">Alright let's go</a>
 						-->
+						</div>
 					</div>
+
 				</section>
+			</div>
+
 
 			<!-- Main -->
+			
 				<section id="main">
 					<div class="container">
-						<div class="row gtr-200">
+						<div >
+							<!--
 							<div class="col-12">
-
-								<!-- Highlight -->
+									
 									<section class="box highlight">
+										
 										<ul class="special">
 											<li><a href="https://www.python.org/download/releases/3.0/" class="icon brands fa-python"target="_blank"><span class="label">Python3</span></a></li>
 											<li><a href="https://docs.python.org/3/library/csv.html" class="icon solid fa-file-csv" target="_blank"><span class="label">csv</span></a></li>
 											<li><a href="http://www.gnu.org/software/bash/" class="icon solid fa-terminal" target="_blank"><span class="label">Terminal</span></a></li>
 											<li><a class="icon brands fa-aws" href="https://aws.amazon.com/" target="_blank"><span class="label">AWS</span></a></li>
 										</ul>
+										-->
+										<!--
 										<section>
 											<header>
 												<h2>Interests and Abilities</h2>
 											</header>
 											<font>
-												Managing VBox virtual machines and PuTTY'ng into them to send commands to my ubuntu servers is always fun. <br/>
-												But I prefer to automate repetitive tasks so I write .sh and .py files.<br />
-												Whenever I come across a time consuming task I will automate it, as even if it is slower to write a script to do it I am satisfied with my work. <br/>
 												I also enjoy helping anyone with IT tasks such as software/hardware issues or connecting to a local network or even virtual network with VM's.<br/>
 												<br/>
 											</font>	
@@ -131,7 +217,7 @@
 													<h3>SQL</h3>
 											</div>
 										</div>
-										<!--
+										
 										<style>
 										* {box-sizing: border-box}
 
@@ -171,54 +257,124 @@
 										<div class="containing">
 										  <div class="skills sql">60%</div>
 										</div>
-										-->
+										
 									</section>
 							</div>
-			<!-- Features -->
+			-->
 
 				
 
 					<!-- Feature -->
 							<section class="box features">
-									<h2 class="major">
-										<span>Projects</span>
+									<h2 class="major2">
+										<span>Save Houston JS Game</span>
 									</h2>
 
-									<a href="https://github.com/Ammmmmmmmmmmmmmmm/server_integration" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<h2><a href="https://github.com/Ammmmmmmmmmmmmmmm/server_integration">Factorio Server Command Log File Parser</a></h2>
+
+
+
+									<div class="iframe-container">
+								    	<iframe src="./sh_desktop/game.html" scrolling="no" width="1280" height="720" frameborder="0"></iframe>
+									</div>
+									<div class="iframe-container2">
+									    <iframe src="./sh_mobile/game2.html" scrolling="no" width="320" height="480" frameborder="0"></iframe>
+									</div>
+									
+									<!-- <h2><a href="https://github.com/Ammmmmmmmmmmmmmmm/server_integration">SAVE HOUSTON JAVASCRIPT GAME</a></h2> -->
+									<div class="project-description">
 									<p>
-										For use in Factorio_Headless server directory on a Ubuntu virtual machine. To start both the log file parser as well as the Factorio server type ./run.sh into the terminal in the directory with the headless server and my scripts. My program reads the factorio log to see if an admin has said a command. My program will activate Bash scripts if commands are detected that will stop the Factorio Server and make command-specific changes to it and then run it again.
+										<strong>PRESS PLAY!</strong> Brought to life by the Phaser 3 game engine and alot of JavaScript and love. Once you dive in, you'll find yourself in control of a plane armed and ready to take on fast moving blobs as you increase your high score. This game seamlessly adapts to various devices, whether you're playing on a desktop monitor or a mobile screen.
 									</p>
-							
+									</div>
+									<h2 class="major">
+										<span>Active Directory Windows Server</span>
+									</h2>
+
+									<a href="https://github.com/Ammmmmmmmmmmmmmmm/Active-Directory-User-Manipulation" class="image featured" style="padding-bottom: 3%;" target="_blank"><img src="images/adpic.png" alt="" /></a>
+									
+
+									<div class="project-description">
+									<p>
+										<p><strong>For the purpose of simulating device management in an office environment,</strong> I established a Windows Active Directory Server. This server was configured within a virtual machine, seamlessly integrated with other virtual machines, all within the same network and domain.
+										</p>
+										<p>
+										Within this domain environment, I streamlined the process of adding thousands of users to our Active Directory system. Using a script named user_creating_script.ps1, it automatically generates and integrates 1000 users from a userlist.csv file, assigning them to the proper security groups among other things. This ensures that anyone added to our Active Directory can access all office computers within our network with their account. <br><br><a href="https://github.com/Ammmmmmmmmmmmmmmm/Active-Directory-User-Manipulation" style="text-decoration: underline; color: blue;" target="_blank">Check code on GitHub!</a>
+										</p>
+									</p>
+									</div>
+									<h2 class="major">
+										<span>Command Log File Parser</span>
+									</h2>
+
+									<a href="https://github.com/Ammmmmmmmmmmmmmmm/server_integration" class="image featured" style="padding-bottom: 3%;" target="_blank"><img src="images/pic01.jpg" alt="" /></a>
+									
+
+
+									<div class="project-description">
+									<p>
+
+										<p><strong>Running a game server is fun, but can become tedious</strong> when handling repetitive administrative tasks. Instead of the 10 minute task of: SSH'ing into instance, turning off the server, moving many files around, generating specific maps, starting server, I created a python and bash script that can do that all in 5 seconds. This resulted in less server downtime and a better user experience.
+										</p>
+										<p>
+										Initially, I created a Python script that monitors in-game messages written to the log file. Using Regex, the script identifies if a message was written by an admin, and if it contains a command. Upon detecting an admin command, the script triggers a Bash script that replaces and loads another map with specific configurations, effectively stopping and restarting the server all within the span of 5 seconds. Additionally, a revert command is in place, allowing users to undo the previous action and return to the last map. This implementation ensures a more enjoyable experience for all server users.<br><br><a href="https://github.com/Ammmmmmmmmmmmmmmm/server_integration" style="text-decoration: underline; color: blue;" target="_blank">Check code on GitHub!</a>
+										</p> 
+
+
+									
+									</p>
+									</div>
 						
 
 									<!-- Feature -->
-								
-									<a href="https://github.com/Ammmmmmmmmmmmmmmm/royal_csv" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h2><a href="#">Royal Tournament Rank Sign Up Parser and Team Simulation</a></h2>
+									<h2 class="major">
+										<span>CSV Data Team Assignment Tool</span>
+									</h2>
+									<a href="https://github.com/Ammmmmmmmmmmmmmmm/royal_csv" class="image featured" style="padding-bottom: 3%;" target="_blank"><img src="images/pic02.jpg" alt="" /></a>
+									<div class="project-description">
 									<p>
-										Imports sign-up from royal tournament google sheet as CSV file. Creates several different types of lists that output to outputs folder and cleans improper inputs with regex. Creates lists in order of rank priority with Age of Empires 3 Definitive Edition ranks prioritized over Age Of Empires 3 Complete Edition and vise versa. Creates a raw file and cleaned version, raw for viewing, cleaned for parsing for the simulation. Parses through cleaned version with team_simulation.py and creates a file called team_re and team_de that represents team captians and choosing order to see which draft from a specific amount of players seems the most fair and enjoyable for people playing and watching. Teams are in groups of 3 and team captians blindly choose off of rank in the simulation.
+										<p><strong> For a Royal Clan tournament we hosted,</strong> 75 players of many skill levels signed up on a google form placing their in game name and two different types of ranks. It was important to assign teams by comparing the two different types of ranks and aggregating them to split the players into balanced teams. 
+										</p>
+										<p>
+										First the data must be imported from the google doc as a CSV file. Since users sometimes input data wrong, the data had to be standardized with Regex in a Python script. Then, we decided that one type of rank should take priority over the other, and from there I made code that listed all the participants by skill. From there I created another Python script that goes over the participants and places them by rank into teams of 3. The work I had created played a valuable role within our team in ensuring a fair and enjoyable tournament experience for both participants and spectators.
+										<br><br><a href="https://github.com/Ammmmmmmmmmmmmmmm/royal_csv" style="text-decoration: underline; color: blue;" target="_blank">Check code on GitHub!</a>
+										</p>
 									</p>
-								
+									</div>
+									<!-- old
+
+
+									Imports sign-up from royal tournament google sheet as CSV file. Creates several different types of lists that output to outputs folder and cleans improper inputs with regex. Creates lists in order of rank priority with Age of Empires 3 Definitive Edition ranks prioritized over Age Of Empires 3 Complete Edition and vise versa. Creates a raw file and cleaned version, raw for viewing, cleaned for parsing for the simulation. Parses through cleaned version with team_simulation.py and creates a file called team_re and team_de that represents team captians and choosing order to see which draft from a specific amount of players seems the most fair and enjoyable for people playing and watching. Teams are in groups of 3 and team captians blindly choose off of rank in the simulation. 
+
+									-->
+						
+									<!-- Feature -->
+									<h2 class="major">
+										<span>Discord Chat Bot</span>
+									</h2>
+
+									<a href="https://github.com/Ammmmmmmmmmmmmmmm/random_quote" class="image featured" style="padding-bottom: 3%;" target="_blank"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="project-description">
+									<p>
+										<strong> In a Discord server,</strong> when a user interacts with the Antwan Bot by typing "$hello," it responds with a simple yet friendly "Hello!" This bot represents just the beginning of my journey into Discord Bot development. The current simplicity is by design, serving as a foundational stepping stone for more advanced and specialized Discord Bots in the future. I will consider evolving and enhancing this bot's capabilities to create a richer user experience.
+										<br><br><a href="https://github.com/Ammmmmmmmmmmmmmmm/random_quote" style="text-decoration: underline; color: blue;" target="_blank">Check code on GitHub!</a>
+									</p>
+									</div>
 
 						
 									<!-- Feature -->
-								
-									<a href="https://github.com/Ammmmmmmmmmmmmmmm/random_quote" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h2><a href="https://github.com/Ammmmmmmmmmmmmmmm/random_quote">Simple Discord Bot</a></h2>
-									<p>
-										After a user in a discord server with the Antwan Bot writes $hello, the bot simply sends "Hello!" back. This bot is very simple but the more complicated foundation has been laid to enable me to make changes on the top of this to make a more specific Discord Bot.
-									</p>
-
-
-						
-									<!-- Feature -->
-								
-									<a href="https://github.com/Ammmmmmmmmmmmmmmm/portfolio_website" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h2 class="major">
+										<span>antwanmeave.com</span>
+									</h2>
+									<a href="https://github.com/Ammmmmmmmmmmmmmmm/portfolio_website" class="image featured" style="padding-bottom: 3%;" target="_blank"><img src="images/website-image.png" alt="" /></a>
+								<!--
 									<h2><a href="https://github.com/Ammmmmmmmmmmmmmmm/portfolio_website">This Website!</a></h2>
+								-->
+									<div class="project-description">
 									<p>
-										If you made it this far you might want to check out my LinkedIn and GitHub below!
+										<strong>Welcome to my personal website,</strong> a labor of passion where I've poured my creativity into every CSS design element and HTML content structure. This site also hosts my Phaser game, and it's a result of many hours of work, including domain name acquisition and hosting. I appreciate your visit and hope you've enjoyed exploring my digital portfolio. Thank you for stopping by! If you'd like to learn more, please feel free to check out my LinkedIn and GitHub profiles below.
+										<br><br><a href="https://github.com/Ammmmmmmmmmmmmmmm/portfolio_website" style="text-decoration: underline; color: blue;" target="_blank">Check code on GitHub!</a>
 									</p>
+									</div>
 							</section>
 						</div>
 					</div>
@@ -275,6 +431,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
 
 	</body>
 </html>
