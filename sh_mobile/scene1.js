@@ -79,10 +79,10 @@ class scene1 extends Phaser.Scene {
 
 	create() {
 
-		//this.scale.scaleMode = Phaser.Scale.FIT;
-	    //this.scale.pageAlignHorizontally = true;
-	    //this.scale.pageAlignVertically = true;
-	    //this.scale.refresh();
+		this.scale.scaleMode = Phaser.Scale.FIT;
+	    this.scale.pageAlignHorizontally = true;
+	    this.scale.pageAlignVertically = true;
+	    this.scale.refresh();
 
 
 		

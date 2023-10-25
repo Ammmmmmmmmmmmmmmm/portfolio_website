@@ -8,7 +8,7 @@ window.onload = function() {
 
 
 	var config = {
-		parent: 'iframe-container',
+		//parent: 'iframe-container',
 		width: 320,
 		height: 480,
 		backgroundColor: 0x000000,
