@@ -104,7 +104,7 @@ class scene2 extends Phaser.Scene {
 		this.is_alive = false;
 		this.p_ship.setInteractive({ draggable: false });
 		this.p_ship.setCollideWorldBounds(false);
-
+		this.p_ship.setScale(0);
 
 		var explosionSprite1 = this.add.sprite(p_ship.x, p_ship.y, "explosion");
 		
@@ -304,7 +304,7 @@ class scene2 extends Phaser.Scene {
 	        });
 
 	        this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
-	        	if (this.is_alive){
+	        if (this.is_alive){
 			    if (!dragDirection) {
 			        if (Math.abs(pointer.velocity.x) > Math.abs(pointer.velocity.y)) {
 			            dragDirection = 'horizontal';
