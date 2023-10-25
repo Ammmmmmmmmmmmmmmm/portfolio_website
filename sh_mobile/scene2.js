@@ -104,8 +104,8 @@ class scene2 extends Phaser.Scene {
 		this.is_alive = false;
 		this.p_ship.setInteractive({ draggable: false });
 		this.p_ship.setCollideWorldBounds(false);
-		this.p_ship.x = 3000;
-		this.p_ship.y = 3000;
+		this.p_ship.destroy();
+
 		var explosionSprite1 = this.add.sprite(p_ship.x, p_ship.y, "explosion");
 		var explosionSprite2 = this.add.sprite(enemy.x, enemy.y, "explosion");
     	explosionSprite1.setScale(15);
