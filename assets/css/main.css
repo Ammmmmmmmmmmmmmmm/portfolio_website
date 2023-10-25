@@ -2537,6 +2537,31 @@ input, select, textarea {
 					border-color: #616763;
 				}
 
+
+@media screen (max-width: 600px) {
+    #banner .content h2 {
+        font-size: 1.5em; /* Adjust the font size for h2 on mobile */
+    }
+
+    #banner .content p {
+        font-size: 1em; /* Adjust the font size for p on mobile */
+    }
+
+    #banner .content .button {
+        font-size: 1.2em; /* Adjust the font size for the button on mobile */
+    }
+    #banner .content {
+    	background-size: auto, 50% 80%; 
+
+
+
+    }
+}
+
+
+
+
+
 /* Main */
 
 	#main {
@@ -2949,7 +2974,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 400px) {
 
 		/* Basic */
 
