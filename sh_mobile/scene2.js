@@ -100,6 +100,11 @@ class scene2 extends Phaser.Scene {
 	}
 
 	hurtPlayer(p_ship, enemy) {
+
+		this.p_ship.setAlpha(0);
+		this.p_ship.x = 3000;
+		this.p_ship.y = 3000;
+
 		var explosionSprite1 = this.add.sprite(p_ship.x, p_ship.y, "explosion");
 		var explosionSprite2 = this.add.sprite(enemy.x, enemy.y, "explosion");
     	explosionSprite1.setScale(15);
@@ -117,9 +122,7 @@ class scene2 extends Phaser.Scene {
 		this.is_alive = false; 
 		this.hornSound.play();
 		window.removeEventListener("deviceorientation", this.handleOrientation, true);
-		this.p_ship.setAlpha(0);
-		this.p_ship.x = 3000;
-		this.p_ship.y = 3000;
+
 
 		setTimeout(() => {
 
@@ -283,7 +286,7 @@ class scene2 extends Phaser.Scene {
 		this.physics.add.existing(this.b_ship);
 		this.b_ship.setScale(.5);
 
-		this.p_ship.setScale(.06);
+		this.p_ship.setScale(.09);
 		
 		this.p_ship.setInteractive({ draggable: true });
 		this.p_ship.on('drag', (pointer, dragX, dragY) => {
