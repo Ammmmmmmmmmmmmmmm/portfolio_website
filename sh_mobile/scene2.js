@@ -101,26 +101,22 @@ class scene2 extends Phaser.Scene {
 
 	hurtPlayer(p_ship, enemy) {
 
+		this.is_alive = false;
 		this.p_ship.setInteractive({ draggable: false });
-		this.p_ship.setAlpha(0);
+		this.p_ship.setCollideWorldBounds(false);
 		this.p_ship.x = 3000;
 		this.p_ship.y = 3000;
-
 		var explosionSprite1 = this.add.sprite(p_ship.x, p_ship.y, "explosion");
 		var explosionSprite2 = this.add.sprite(enemy.x, enemy.y, "explosion");
     	explosionSprite1.setScale(15);
     	explosionSprite1.play("explode");
 		explosionSprite2.setScale(15);
     	explosionSprite2.play("explode");
-    	this.p_ship.setCollideWorldBounds(false);
-    	p_ship.x = 200000
-    	p_ship.y = 200000
 		enemy.destroy();
 		this.explosionSound.play();
 		this.music.stop();
 		this.comingSound.stop();
-		this.leavingSound.stop();
-		this.is_alive = false; 
+		this.leavingSound.stop(); 
 		this.hornSound.play();
 		window.removeEventListener("deviceorientation", this.handleOrientation, true);
 
