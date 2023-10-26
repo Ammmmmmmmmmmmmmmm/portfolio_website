@@ -2551,7 +2551,10 @@ input, select, textarea {
         font-size: 1.2em; /* Adjust the font size for the button on mobile */
     }
     #banner .content {
-    	max-height: 55%;
+
+
+    	
+	max-height: 100px;
 
 
 
