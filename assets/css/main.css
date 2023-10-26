@@ -2544,7 +2544,7 @@ input, select, textarea {
     }
 
     #banner .content p {
-        font-size: .7em; /* Adjust the font size for p on mobile */
+        font-size: 0em; /* Adjust the font size for p on mobile */
     }
 
     #banner .content .button {
