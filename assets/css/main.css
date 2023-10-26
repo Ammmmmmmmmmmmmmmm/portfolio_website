@@ -2540,11 +2540,11 @@ input, select, textarea {
 
 @media screen and (max-width: 700px) {
     #banner .content h2 {
-        font-size: 1.5em; /* Adjust the font size for h2 on mobile */
+        font-size: 1.1em; /* Adjust the font size for h2 on mobile */
     }
 
     #banner .content p {
-        font-size: 1em; /* Adjust the font size for p on mobile */
+        font-size: .7em; /* Adjust the font size for p on mobile */
     }
 
     #banner .content .button {
