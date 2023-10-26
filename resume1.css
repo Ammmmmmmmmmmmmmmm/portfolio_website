@@ -111,5 +111,37 @@ div.author{white-space: nowrap;}
 div.abstract {width:100%;}
 .columns-2 p:first-child { margin-top: 0em; }
 .columns-2{-moz-column-count:2; -webkit-column-count:2; column-count:2; -moz-column-gap: 10.0pt; -webkit-column-gap: 10.0pt; column-gap: 10.0pt;  -moz-column-fill: balance; -webkit-column-fill: balance; column-fill: balance; }
+.sectionHead{  }
 /* end css.sty */
+/*
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.column {
+    flex: 1;
+
+}
+*/
+div.appearMobile {display: none;}
+@media screen and (max-width: 840px) {
+    .columns-2 .sectionHead,
+    .columns-2 p,
+    .columns-2 ul,
+    .columns-2 h4,
+    .columns-2 a {
+        display: none !important;
+    }
+    .appearMobile {
+    	display: block !important;
+    }
+
+
+
+
+
+
+
+
+}
